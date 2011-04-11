@@ -5,6 +5,7 @@ Release:	%mkrel 2
 Source0:	rosa-launcher-%{version}.tar.gz
 Group:		Graphical desktop/KDE
 License:	GPLv3
+BuildArch: noarch
 
 Requires: kdebase4-workspace
 BuildRequires: kde4-macros
