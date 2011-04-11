@@ -1,14 +1,13 @@
 Name:		rosa-launcher
 Summary:	ROSA Desktop Application Launcher
-Version:	0.15.2
-Release:	%mkrel 2
+Version:	0.15.4
+Release:	%mkrel 1
 Source0:	rosa-launcher-%{version}.tar.gz
 Group:		Graphical desktop/KDE
 License:	GPLv3
-BuildArch: noarch
 
-Requires: kdebase4-workspace
-BuildRequires: kde4-macros
+
+Requires:       kdebase4-workspace
 Requires:       python-kde4
 Requires:       plasma-scriptengine-python
 BuildRequires:  kdebase4-workspace-devel
@@ -28,6 +27,10 @@ make build
 
 make DESTDIR=%{buildroot} install
 
+%ifarch x86_64
+mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
+%endif
+
 %clean 
 %__rm -rf %{buildroot}
 
@@ -41,3 +44,9 @@ make DESTDIR=%{buildroot} install
 %_kde_datadir/apps/plasma/plasmoids/rosastarter
 %_kde_datadir/kde4/services/plasma-applet-rosastarter.desktop
 
+%changelog
+* Fri Apr 08 2011 Aleksey Yermakov 0.15
+- First cooker candidate
+
+* Wed Dec 22 2010 Aleksey Yermakov 0.1
+- Initial release
