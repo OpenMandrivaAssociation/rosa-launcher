@@ -1,7 +1,7 @@
 Name:		rosa-launcher
 Summary:	ROSA Desktop Application Launcher
 Version:	0.18.2
-Release:	%mkrel 1
+Release:	1
 Source0:	rosa-launcher-%{version}.tar.gz
 Group:		Graphical desktop/KDE
 License:	GPLv3
