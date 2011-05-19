@@ -1,7 +1,7 @@
 Name:		rosa-launcher
 Summary:	ROSA Desktop Application Launcher
-Version:	0.17.1
-Release:	2
+Version:	0.18.2
+Release:	%mkrel 1
 Source0:	rosa-launcher-%{version}.tar.gz
 Group:		Graphical desktop/KDE
 License:	GPLv3
@@ -39,7 +39,7 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %_kde_bindir/rosa-launcher
 %_kde_libdir/kde4/plasma_applet_rosa-launcher.so
 %_kde_datadir/kde4/services/plasma-applet-rosa-launcher.desktop
-%_localedir
+/usr/share/locale/
 
 %_kde_datadir/apps/plasma/plasmoids/rosastarter
 %_kde_datadir/kde4/services/plasma-applet-rosastarter.desktop
