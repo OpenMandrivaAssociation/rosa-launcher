@@ -23,7 +23,6 @@ ROSA Desktop Application Launcher
 make build
 
 %install
-%__rm -rf %{buildroot}
 
 make DESTDIR=%{buildroot} install
 
@@ -31,11 +30,7 @@ make DESTDIR=%{buildroot} install
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
 
-%clean 
-%__rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %_kde_bindir/rosa-launcher
 %_kde_libdir/kde4/plasma_applet_rosa-launcher.so
 %_kde_datadir/kde4/services/plasma-applet-rosa-launcher.desktop
