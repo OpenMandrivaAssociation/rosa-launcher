@@ -39,7 +39,7 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %_kde_bindir/rosa-launcher
 %_kde_libdir/kde4/plasma_applet_rosa-launcher.so
 %_kde_datadir/kde4/services/plasma-applet-rosa-launcher.desktop
-/usr/share/locale/
+%_localedir
 
 %_kde_datadir/apps/plasma/plasmoids/rosastarter
 %_kde_datadir/kde4/services/plasma-applet-rosastarter.desktop
