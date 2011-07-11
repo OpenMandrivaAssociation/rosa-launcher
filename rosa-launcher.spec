@@ -1,5 +1,5 @@
 Name:		rosa-launcher
-Version:	0.28.2
+Version:	0.28.5
 Release:	1
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
