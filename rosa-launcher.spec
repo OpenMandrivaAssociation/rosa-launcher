@@ -1,5 +1,5 @@
 Name:		rosa-launcher
-Version:	0.28.9
+Version:	0.29.1
 Release:	1
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
@@ -30,6 +30,7 @@ ROSA Desktop Application Launcher
 %_kde_datadir/kde4/services/plasma-runner-rosa-services.desktop
 
 %_kde_datadir/icons/rosa/apps/128/rosalauncher.png
+%_kde_datadir/apps/rosa-launcher/icons/buttons/*
 
 #--------------------------------------------------------------------
 
