@@ -1,5 +1,5 @@
 Name:		rosa-launcher
-Version:	0.30.15
+Version:	0.32
 Release:	1
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
@@ -8,9 +8,6 @@ URL:		http://www.rosalab.ru/
 Source0:	rosa-launcher-%{version}.tar.gz
 
 Requires:       kdebase4-workspace
-Requires:       python-kde4
-Requires:       plasma-scriptengine-python
-Requires:       python-dbus
 BuildRequires:  kdebase4-workspace-devel
 BuildRequires:  kdebase4-devel
 
@@ -24,14 +21,14 @@ ROSA Desktop Application Launcher
 %_kde_datadir/kde4/services/plasma-applet-rosa-launcher.desktop
 %_localedir/*
 
-%_kde_datadir/apps/plasma/plasmoids/rosastarter
+%_kde_libdir/kde4/plasma_applet_rosastarter.so
 %_kde_datadir/kde4/services/plasma-applet-rosastarter.desktop
 
 %_kde_libdir/kde4/plasma_runner_rosa_services.so
 %_kde_datadir/kde4/services/plasma-runner-rosa-services.desktop
 
 %_kde_datadir/icons/rosa/apps/128/rosalauncher.png
-%_kde_datadir/apps/rosa-launcher/icons/buttons/*
+%_kde_datadir/apps/rosa-launcher/*
 
 #--------------------------------------------------------------------
 
