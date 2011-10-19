@@ -1,6 +1,6 @@
 Name:		rosa-launcher
 Version:	0.32
-Release:	1
+Release:	2
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
 License:	GPLv3
@@ -8,6 +8,7 @@ URL:		http://www.rosalab.ru/
 Source0:	rosa-launcher-%{version}.tar.gz
 
 Requires:       kdebase4-workspace
+Requires:   	libqtcore4 >= 4.7.4
 BuildRequires:  kdebase4-workspace-devel
 BuildRequires:  kdebase4-devel
 
