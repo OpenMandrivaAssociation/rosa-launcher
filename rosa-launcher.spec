@@ -1,5 +1,5 @@
 Name:		rosa-launcher
-Version:	0.34.8
+Version:	0.34.9
 Release:	1
 Epoch:		1
 Summary:	ROSA Desktop Application Launcher
