@@ -6,29 +6,28 @@ Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
 License:	GPLv3
 URL:		http://www.rosalab.ru/
-Source0:	rosa-launcher-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 
-Requires:       kdebase4-workspace
-BuildRequires:  kdebase4-workspace-devel
-BuildRequires:  kdebase4-devel
+Requires:	kdebase4-workspace
+BuildRequires:	kdebase4-workspace-devel
+BuildRequires:	kdebase4-devel
 
 %description
 ROSA Desktop Application Launcher
 
 %files -f ROSA_Launcher.lang
-%defattr(-,root,root)
-%_kde_bindir/rosa-launcher
-%_kde_libdir/kde4/plasma_applet_rosa-launcher.so
-%_kde_datadir/kde4/services/plasma-applet-rosa-launcher.desktop
+%{_kde_bindir}/rosa-launcher
+%{_kde_libdir}/kde4/plasma_applet_rosa-launcher.so
+%{_kde_datadir}/kde4/services/plasma-applet-rosa-launcher.desktop
 
-%_kde_libdir/kde4/plasma_applet_rosastarter.so
-%_kde_datadir/kde4/services/plasma-applet-rosastarter.desktop
+%{_kde_libdir}/kde4/plasma_applet_rosastarter.so
+%{_kde_datadir}/kde4/services/plasma-applet-rosastarter.desktop
 
-%_kde_libdir/kde4/plasma_runner_rosa_services.so
-%_kde_datadir/kde4/services/plasma-runner-rosa-services.desktop
+%{_kde_libdir}/kde4/plasma_runner_rosa_services.so
+%{_kde_datadir}/kde4/services/plasma-runner-rosa-services.desktop
 
-%_kde_datadir/icons/rosa/apps/128/rosalauncher.png
-%_kde_datadir/apps/rosa-launcher/*
+%{_kde_datadir}/icons/rosa/apps/128/rosalauncher.png
+%{_kde_datadir}/apps/rosa-launcher/*
 
 #--------------------------------------------------------------------
 
