@@ -29,10 +29,9 @@ ROSA Desktop Application Launcher
 %{_kde_datadir}/icons/rosa/apps/128/rosalauncher.png
 %{_kde_datadir}/apps/rosa-launcher/*
 
-#--------------------------------------------------------------------
-
 %prep
 %setup -q
+find -name \*.h -o -name \*.cpp -o -name \*.desktop | xargs chmod 644
 
 %build
 %make build
