@@ -44,5 +44,6 @@ ROSA Desktop Application Launcher
 %ifarch x86_64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
+find %{buildroot}%{_localedir} -name \*.po* -delete
 
 %find_lang ROSA_Launcher
