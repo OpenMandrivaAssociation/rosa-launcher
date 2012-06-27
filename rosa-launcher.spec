@@ -15,12 +15,11 @@ BuildRequires:  kdebase4-devel
 %description
 ROSA Desktop Application Launcher
 
-%files
+%files -f ROSA_Launcher.lang
 %defattr(-,root,root)
 %_kde_bindir/rosa-launcher
 %_kde_libdir/kde4/plasma_applet_rosa-launcher.so
 %_kde_datadir/kde4/services/plasma-applet-rosa-launcher.desktop
-%_localedir/*
 
 %_kde_libdir/kde4/plasma_applet_rosastarter.so
 %_kde_datadir/kde4/services/plasma-applet-rosastarter.desktop
@@ -45,3 +44,5 @@ ROSA Desktop Application Launcher
 %ifarch x86_64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
+
+%find_lang ROSA_Launcher
