@@ -1,0 +1,19 @@
+--- rosa-launcher-2.0.0/rosa-starter/src/rosa-starter.cpp~	2013-03-03 14:53:59.067769884 +0100
++++ rosa-launcher-2.0.0/rosa-starter/src/rosa-starter.cpp	2013-03-03 14:54:02.100789890 +0100
+@@ -37,6 +37,7 @@
+ #include <KDE/KRun>
+ #include <KDE/KGlobal>
+ #include <KDE/KLocale>
++#include <KIcon>
+ 
+ 
+ QString ROSA_Starter::pathToRoot()
+@@ -71,7 +72,7 @@ void ROSA_Starter::init()
+     resize(m_iconSize, m_iconSize);
+ 
+     m_icon = new Plasma::IconWidget();
+-    m_icon->setIcon(QIcon(pathToRoot() + QString::fromLatin1("/" SW_ASSETS_PATH "/") + "rosa-icon.png"));
++    m_icon->setIcon(KIcon("mdvbutton")); //QIcon(pathToRoot() + QString::fromLatin1("/" SW_ASSETS_PATH "/") + "rosa-icon.png"));
+     m_layout->addItem(m_icon);
+ 
+     connect(this, SIGNAL(geometryChanged()), SLOT(resetIconSize()));
