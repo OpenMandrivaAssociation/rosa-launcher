@@ -1,0 +1,270 @@
+diff -ruN rosa-launcher-2.0.0/po/CMakeLists.txt rosa-launcher-2.0.0.new/po/CMakeLists.txt
+--- rosa-launcher-2.0.0/po/CMakeLists.txt	2013-02-21 13:37:15.000000000 +0000
++++ rosa-launcher-2.0.0/po/CMakeLists.txt	2013-07-30 22:52:26.432615161 +0100
+@@ -8,6 +8,7 @@
+ add_subdirectory(et)
+ add_subdirectory(eu)
+ add_subdirectory(fr)
++add_subdirectory(it)
+ add_subdirectory(pt_BR)
+ add_subdirectory(ru)
+ add_subdirectory(sl)
+--- rosa-launcher-2.0.0/po/it/CMakeLists.txt	1970-01-01 01:00:00.000000000 +0100
++++ rosa-launcher-2.0.0/po/it/CMakeLists.txt	2013-07-30 10:06:36.910967367 +0100
+@@ -0,0 +1,2 @@
++file(GLOB _po_files *.po)
++GETTEXT_PROCESS_PO_FILES(it ALL INSTALL_DESTINATION ${LOCALE_INSTALL_DIR} ${_po_files} )
+--- rosa-launcher-2.0.0/po/it/ROSA_Launcher.po	1970-01-01 01:00:00.000000000 +0100
++++ rosa-launcher-2.0.0/po/it/ROSA_Launcher.po	2013-07-30 22:51:43.021617698 +0100
+@@ -0,0 +1,251 @@
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++#
++# Translators:
++#   <cullero@gmail.com>, 2011.
++#   <evidal86@gmail.com>, 2011.
++#   <jpbraun@mandriva.com>, 2011.
++#   <periliocastrol@gmail.com>, 2011.
++# luca pedrielli <luca.pedrielli@gmail.com>, 2013.
++msgid ""
++msgstr ""
++"Project-Id-Version: Simple Welcome\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2012-12-06 11:27+0400\n"
++"PO-Revision-Date: 2013-07-30 13:56+0200\n"
++"Last-Translator: luca pedrielli <luca.pedrielli@gmail.com>\n"
++"Language-Team: Italian <kde-i18n-it@kde.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"Language: es\n"
++"Plural-Forms: nplurals=2; plural=(n != 1)\n"
++"X-Generator: Lokalize 1.1\n"
++
++#: src/main.cpp:40 src/main.cpp:47
++msgid "ROSA Desktop Application Launcher"
++msgstr "Avviatore di applicazioni ROSA"
++
++#: src/main.cpp:49
++msgid "Copyright 2010-2012, ROSALab"
++msgstr "Copyright 2010-2012, ROSALab"
++
++#: src/main.cpp:50
++msgid "Alexander Skakov"
++msgstr "Alexander Skakov"
++
++#: src/main.cpp:51 src/main.cpp:54 src/main.cpp:57 src/main.cpp:60
++#: src/main.cpp:63
++msgid "Author"
++msgstr "Autore"
++
++#: src/main.cpp:53
++msgid "Evgeniy Augin"
++msgstr "Evgeniy Augin"
++
++#: src/main.cpp:56
++msgid "Sergey Borovkov"
++msgstr "Sergey Borovkov"
++
++#: src/main.cpp:59
++msgid "Julia Mineeva"
++msgstr "Julia Mineeva"
++
++#: src/main.cpp:62
++msgid "Aleksey Yermakov"
++msgstr "Aleksey Yermakov"
++
++#: src/main.cpp:69
++msgid "Silent run. Hide application window after start."
++msgstr "Silent run. Hide application window after start."
++
++#: src/qml/WelcomeTab.qml:18 src/qml/IconGridView.qml:86
++msgid "Recent Applications"
++msgstr "Applicazioni Recenti"
++
++#: src/qml/WelcomeTab.qml:25
++msgid "Places"
++msgstr "Risorse"
++
++#: src/qml/WelcomeTab.qml:32
++msgid "Recent Documents"
++msgstr "Documenti Recenti"
++
++#: src/qml/BottomBar.qml:80
++msgid "Welcome"
++msgstr "Benvenuto"
++
++#: src/qml/BottomBar.qml:90
++msgid "Applications"
++msgstr "Applicazioni"
++
++#: src/qml/BottomBar.qml:100
++msgid "TimeFrame"
++msgstr "TimeFrame"
++
++#: src/qml/timeframe/SocialSendMessage.qml:109
++msgid "Write message"
++msgstr "Scrivi messaggio"
++
++#: src/qml/timeframe/SocialSendMessage.qml:209
++#: src/qml/timeframe/SocialSendMessage.qml:218
++#: src/qml/timeframe/SocialSendMessage.qml:372
++msgid "What do you think about?"
++msgstr "Cosa ne pensi?"
++
++#: src/qml/timeframe/SocialSendMessage.qml:337
++msgid "Send"
++msgstr "Invia"
++
++#: src/qml/timeframe/SocialGalleryItem.qml:151
++#: src/qml/timeframe/SocialCloudItem.qml:233
++msgid "Audio: "
++msgstr "Audio: "
++
++#: src/qml/timeframe/SocialGalleryItem.qml:181
++#: src/qml/timeframe/SocialCloudItem.qml:265
++msgid "Video: "
++msgstr "Video: "
++
++#: src/qml/timeframe/SocialGalleryItem.qml:279
++#: src/qml/timeframe/SocialCloudItem.qml:327
++#: src/qml/timeframe/CommentsEditBox.qml:76
++#: src/qml/timeframe/CommentsEditBox.qml:101
++msgid "Write comment..."
++msgstr "Scrivi commento...."
++
++#: src/qml/timeframe/SocialGalleryItem.qml:375
++#: src/qml/timeframe/SocialCloudItem.qml:463
++msgid "in"
++msgstr "in"
++
++#: src/qml/timeframe/TimeFrameTab.qml:48 src/qml/timeframe/TimeFrameTab.qml:72
++msgid "All"
++msgstr "Tutti"
++
++#: src/qml/timeframe/TimeFrameTab.qml:50 src/qml/timeframe/TimeFrameTab.qml:74
++msgid "Images"
++msgstr "Immagini"
++
++#: src/qml/timeframe/TimeFrameTab.qml:52 src/qml/timeframe/TimeFrameTab.qml:76
++msgid "Video"
++msgstr "Video"
++
++#: src/qml/timeframe/TimeFrameTab.qml:54 src/qml/timeframe/TimeFrameTab.qml:78
++msgid "Documents"
++msgstr "Documenti"
++
++#: src/qml/timeframe/TimeFrameTab.qml:56 src/qml/timeframe/TimeFrameTab.qml:80
++msgid "Manage Networks"
++msgstr "Gestione Network"
++
++#: src/qml/timeframe/TimeFrameTab.qml:266
++msgid "My Local Documents"
++msgstr "I Miei Documenti"
++
++#: src/qml/timeframe/TimeFrameTab.qml:338
++msgid "Social Networking Sites"
++msgstr "Social Network"
++
++#: src/qml/timeframe/TimeFrameTab.qml:433
++msgid "Nepomuk is disabled. You can enable it in the KDE Control Centre"
++msgstr ""
++"Nepomuk è disabilitato. Lo puoi abilitare in Configura il tuo desktop"
++
++#: src/qml/timeframe/TimeFrameTab.qml:467
++msgid "Enable..."
++msgstr "Abilita..."
++
++#: src/qml/timeframe/SocialAuthorization.qml:68
++msgid "Logout"
++msgstr "Logout"
++
++#: src/qml/timeframe/SocialAuthorization.qml:68
++msgid "Login"
++msgstr "Login"
++
++#: src/qml/timeframe/TimeScale.qml:8
++msgid "JAN"
++msgstr "GEN"
++
++#: src/qml/timeframe/TimeScale.qml:8
++msgid "FEB"
++msgstr "FEB"
++
++#: src/qml/timeframe/TimeScale.qml:8
++msgid "MAR"
++msgstr "MAR"
++
++#: src/qml/timeframe/TimeScale.qml:8
++msgid "APR"
++msgstr "APR"
++
++#: src/qml/timeframe/TimeScale.qml:8
++msgid "MAY"
++msgstr "MAG"
++
++#: src/qml/timeframe/TimeScale.qml:9
++msgid "JUN"
++msgstr "GIU"
++
++#: src/qml/timeframe/TimeScale.qml:9
++msgid "JUL"
++msgstr "LUG"
++
++#: src/qml/timeframe/TimeScale.qml:9
++msgid "AUG"
++msgstr "AGO"
++
++#: src/qml/timeframe/TimeScale.qml:9
++msgid "SEP"
++msgstr "SET"
++
++#: src/qml/timeframe/TimeScale.qml:9
++msgid "OCT"
++msgstr "OTT"
++
++#: src/qml/timeframe/TimeScale.qml:9
++msgid "NOV"
++msgstr "NOV"
++
++#: src/qml/timeframe/TimeScale.qml:9
++msgid "DEC"
++msgstr "DIC"
++
++#: src/qml/timeframe/TimeScale.qml:14
++msgid "UND"
++msgstr "UND"
++
++#: src/qml/timeframe/SocialBottomBar.qml:89
++msgid "Like"
++msgstr "Like"
++
++#: src/qml/timeframe/SocialBottomBar.qml:105
++msgid "Unlike"
++msgstr "Unlike"
++
++#: src/qml/timeframe/SocialBottomBar.qml:129
++msgid "Hide comments"
++msgstr "Nascondi commenti"
++
++#: src/qml/timeframe/SocialBottomBar.qml:129
++msgid "Show comments"
++msgstr "Mostra commenti"
++
++#: src/qml/timeframe/SocialImage.qml:37
++msgid "Image is currently not available"
++msgstr "Immagine attualmente non disponibile"
++
++#: rosa-starter/src/rosa-starter.cpp:80
++msgid "Edit Applications..."
++msgstr "Modifica il menù"
++
++#: facebook-timeframe-plugin/facebookmodule.cpp:64
++msgid "Facebook"
++msgstr "Facebook"
++
++#: vkontakte-timeframe-plugin/vkontaktemodule.cpp:64
++msgid "VKontakte"
++msgstr "VKontakte"
++
++
