@@ -1,12 +1,13 @@
 Name:		rosa-launcher
 Version:	2.0.0
-Release:	54.3
+Release:	54.4
 Epoch:		2
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
 License:	GPLv3
 URL:		http://www.rosalab.ru/
 Source0:	%{name}-%{version}.tar.gz
+Source1:	om-simplewelcome.jpg
 Patch0:		rosa-launcher-2.0.0-mdvbutton.patch
 Patch1:		rosa-launcher-2.0.0-it.patch
 Requires:	kdebase4-workspace qjson
@@ -26,6 +27,7 @@ ROSA Desktop Application Launcher
 
 %install
 %makeinstall_std -C build
+cp %{SOURCE1} %{_datadir}/rosa-launcher/assets/background.jpg
 
 %find_lang ROSA_Launcher
 
