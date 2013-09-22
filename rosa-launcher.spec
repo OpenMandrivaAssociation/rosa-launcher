@@ -27,7 +27,7 @@ ROSA Desktop Application Launcher
 
 %install
 %makeinstall_std -C build
-cp %{SOURCE1} %{_datadir}/rosa-launcher/assets/background.jpg
+cp %{SOURCE1} %{buildroot}%{_datadir}/rosa-launcher/assets/background.jpg
 
 %find_lang ROSA_Launcher
 
