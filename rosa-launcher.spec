@@ -1,6 +1,6 @@
 Name:		rosa-launcher
 Version:	2.0.0
-Release:	54.4
+Release:	54.5
 Epoch:		2
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
@@ -15,7 +15,7 @@ BuildRequires:	kdebase4-workspace-devel qjson-devel
 BuildRequires:	pkgconfig(shared-desktop-ontologies)
 
 %description
-ROSA Desktop Application Launcher
+ROSA Desktop Application Launcher.
 
 %prep
 %setup -q
