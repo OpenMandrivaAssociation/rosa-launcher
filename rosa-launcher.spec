@@ -1,6 +1,6 @@
 Name:		rosa-launcher
 Version:	2.0.0
-Release:	54.9
+Release:	55
 Epoch:		2
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
@@ -11,8 +11,10 @@ Source1:	om-simplewelcome.jpg
 Patch0:		rosa-launcher-2.0.0-mdvbutton.patch
 Patch1:		rosa-launcher-2.0.0-it.patch
 Patch2:		rosa-launcher-2.0.0-background.png.patch
-Requires:	kdebase4-workspace qjson
-BuildRequires:	kdebase4-workspace-devel qjson-devel
+Requires:	kdebase4-workspace
+Requires:	qjson
+BuildRequires:	kdebase4-workspace-devel
+BuildRequires:	qjson-devel
 BuildRequires:	pkgconfig(shared-desktop-ontologies)
 
 %description
