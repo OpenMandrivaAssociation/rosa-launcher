@@ -10,7 +10,7 @@ Source0:	%{name}-%{version}.tar.gz
 Source1:	om-simplewelcome.jpg
 Patch0:		rosa-launcher-2.0.0-mdvbutton.patch
 Patch1:		rosa-launcher-2.0.0-it.patch
-Patch2:		rosa-launcher-2.0.0-background.png.patc
+Patch2:		rosa-launcher-2.0.0-background.png.patch
 Requires:	kdebase4-workspace qjson
 BuildRequires:	kdebase4-workspace-devel qjson-devel
 BuildRequires:	pkgconfig(shared-desktop-ontologies)
