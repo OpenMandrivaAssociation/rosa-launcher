@@ -10,7 +10,7 @@
 +        fillMode: Image.Stretch
          smooth: true
 -        source: "image://generalicon/asset/background.jpg"
-+        source: "image://generalicon/asset/background.png"
++        source: "/usr/share/mdk/backgrounds/default-opaque.png"
      }
  
      Item {
