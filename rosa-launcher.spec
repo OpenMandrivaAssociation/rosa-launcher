@@ -18,6 +18,7 @@ Requires:	distro-theme-opaque-background
 BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	qjson-devel
 BuildRequires:	pkgconfig(shared-desktop-ontologies)
+BuildRequires:	cmake(Baloo)
 
 %description
 ROSA Desktop Application Launcher.
