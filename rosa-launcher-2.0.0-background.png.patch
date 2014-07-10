@@ -1,0 +1,16 @@
+--- rosa-launcher-2.0.0/src/qml/main.qml.background~	2013-02-21 14:37:15.000000000 +0100
++++ rosa-launcher-2.0.0/src/qml/main.qml	2014-03-04 00:23:44.025079238 +0100
+@@ -63,11 +63,10 @@ Item {
+     Image {
+         id: backgroundImage
+         anchors.fill: parent
+-        z: -10
+ 
+-        fillMode: Image.PreserveAspectCrop
++        fillMode: Image.Stretch
+         smooth: true
+-        source: "image://generalicon/asset/background.jpg"
++        source: "/usr/share/mdk/backgrounds/default-opaque.png"
+     }
+ 
+     Item {
