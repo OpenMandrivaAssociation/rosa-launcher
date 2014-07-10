@@ -1,12 +1,12 @@
 Name:		rosa-launcher
-Version:	2.0.0
-Release:	57
+Version:	2.1.0
+Release:	1
 Epoch:		3
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
 License:	GPLv3
 URL:		http://www.rosalab.ru/
-Source0:	%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.bz2
 Source1:	om-simplewelcome.jpg
 Patch0:		rosa-launcher-2.0.0-mdvbutton.patch
 Patch1:		rosa-launcher-2.0.0-it.patch
@@ -15,6 +15,7 @@ Requires:	kdebase4-workspace
 Requires:	qjson
 %if "%{disttag}" == "mdk"
 Requires:	distro-theme-opaque-background
+%endif
 BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	qjson-devel
 BuildRequires:	pkgconfig(shared-desktop-ontologies)
