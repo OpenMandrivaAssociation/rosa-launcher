@@ -17,6 +17,7 @@ Requires:	distro-theme-opaque-background
 %endif
 BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	qjson-devel
+BuildRequires:  baloo-devel < 5
 BuildRequires:	pkgconfig(shared-desktop-ontologies)
 
 %description
