@@ -9,7 +9,6 @@ URL:		http://www.rosalab.ru/
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	om-simplewelcome.jpg
 Patch0:		rosa-launcher-2.0.0-mdvbutton.patch
-Patch1:		rosa-launcher-2.0.0-it.patch
 Patch2:		rosa-launcher-2.0.0-background.png.patch
 Requires:	kdebase4-workspace
 Requires:	qjson
@@ -26,7 +25,6 @@ ROSA Desktop Application Launcher.
 %prep
 %setup -q
 %patch0 -p1 -b .mdvbutton~
-%patch1 -p1 -b .it~
 %if "%{disttag}" == "mdk"
 %patch2 -p1 -b .background~
 %endif
