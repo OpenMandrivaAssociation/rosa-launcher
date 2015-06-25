@@ -1,0 +1,12 @@
+--- rosa-launcher-2.1.3/src/generaliconprovider.cpp.background~	2015-06-25 00:10:01.000000000 +0200
++++ rosa-launcher-2.1.3/src/generaliconprovider.cpp	2015-06-25 04:55:11.665024554 +0200
+@@ -144,6 +144,9 @@ QPixmap GeneralIconProvider::requestPixm
+                 }
+             }
+             if (backgroundPath.isEmpty()) {
++                backgroundPath = SWApp::pathToShare() + "/mdk/backgrounds/default.png";
++            }
++            if (backgroundPath.isEmpty()) {
+                 backgroundPath = SWApp::pathToShare() + "/mdk/backgrounds/rosa-background.jpg";
+             }
+             iconPixmap.load(backgroundPath);
