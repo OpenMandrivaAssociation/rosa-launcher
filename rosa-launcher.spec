@@ -5,7 +5,7 @@ Epoch:		3
 Summary:	ROSA Desktop Application Launcher
 Group:		Graphical desktop/KDE
 License:	GPLv3
-URL:		http://www.rosalab.ru/
+URL:		https://www.rosalab.ru/
 Source0:	%{name}-%{version}.tar.xz
 Source1:	om-simplewelcome.jpg
 Patch0:		rosa-launcher-2.0.0-mdvbutton.patch
