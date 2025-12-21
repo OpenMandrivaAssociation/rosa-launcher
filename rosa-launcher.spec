@@ -12,6 +12,7 @@ Patch0:		rosa-launcher-2.0.0-mdvbutton.patch
 Patch2:		rosa-launcher-2.1.3-custom-background-default.png.patch
 Requires:	kdebase4-workspace
 Requires:	qjson
+BuildRequires:	make
 BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	qjson-devel
 BuildRequires:  baloo-devel < 5
